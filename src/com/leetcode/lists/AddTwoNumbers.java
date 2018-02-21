@@ -2,10 +2,6 @@ package com.leetcode.lists;
 
 public class AddTwoNumbers {
 	
-	/**
-	 * Definition for singly-linked list. public class ListNode { int val;
-	 * ListNode next; ListNode(int x) { val = x; } }
-	 */
 	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 		int num1 = findDecimalFromNode(l1);
@@ -14,16 +10,13 @@ public class AddTwoNumbers {
 		int result = num1 + num2;
 		System.out.println("Result is " + result);
 		 return getNodeFromNumber(result);
-//		return null;
 	}
 	
 	private static ListNode getNodeFromNumber(int a){
 		ListNode result = null;
 		int temp  =a;
-		int count  = 0;
 		while(temp!=0){
 			int digit = temp %10;
-			ListNode n1 = new ListNode(digit);
 			temp = temp/10;
 			System.out.println(digit);
 		}
